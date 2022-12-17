@@ -1,0 +1,27 @@
+<section id="education">
+    <h1>Education</h1>
+    <ul data-content="education">
+        <li *ngFor='let item of education'>
+            <section>
+                <ul>
+                    <li>
+                        <div class="label">School:</div>
+                        <div class="content">{{item.school}}</div>
+                    </li>
+                    <li>
+                        <div class="label">Program:</div>
+                        <div class="content">{{item.program}}</div>
+                    </li>
+                    <li>
+                        <div class="label">Dates Attended:</div>
+                        <div class="content">{{item.startDate}} - {{item.endDate}}</div>
+                    </li>
+                    <li>
+                        <div class="label">Achievements:</div>
+                        <div class="content">{{item.achievements}}</div>
+                    </li>
+                </ul>
+            </section>
+        </li>
+    </ul>
+</section>

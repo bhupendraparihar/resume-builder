@@ -1,0 +1,35 @@
+<h2>Educations</h2>
+<section *ngFor="let education of educations">
+    <h3>Education {{education.id}} <button (click)="deleteEducation(education.id)">Delete</button></h3>
+    <div>
+        <label>School</label>
+        <div>
+            <input type="text" value="{{education.school}}" [(ngModel)]="education.school" >
+        </div>
+    </div>
+    <div>
+        <label>Program</label>
+        <div>
+            <input type="text" value="{{education.program}}" [(ngModel)]="education.program">
+        </div>
+    </div>
+    <div>
+        <label>Start Year</label>
+        <div>
+            <input type="text" value="{{education.startDate}}" [(ngModel)]="education.startDate">
+        </div>
+    </div>
+    <div>
+        <label>End Year</label>
+        <div>
+            <input type="text" value="{{education.endDate}}" [(ngModel)]="education.endDate">
+        </div>
+    </div>
+    <div>
+        <label>Achievements/Percentage/CPI</label>
+        <div>
+            <input type="text" value="{{education.achievements}}" [(ngModel)]="education.achievements">
+        </div>
+    </div>
+</section>
+<button (click)="addNewEducation()">Add Education</button>

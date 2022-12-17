@@ -1,0 +1,21 @@
+<section>
+    <section class="flex">
+        <h1 data-content="name" class="name">{{header.name}}</h1>
+        <img src="./../../../assets/skilllync-logo.png">
+    </section>
+    <h2 header-content="title">{{header.title}}</h2>
+    <section id="contact">
+        <div class="social"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;<a href="tel:{{header.phoneNumber}">{{header.phoneNumber}}</a></div>
+        <div class="social">
+            <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:{{header.email}">{{header.email}}</a></div>
+        <div class="social">
+            <i class="fa fa-link fa-fw" aria-hidden="true"></i>&nbsp;<a [href]="header.website">{{header.website}}</a>
+        </div>
+        <div class="social">
+            <i class="fa fa-github fa-fw" aria-hidden="true"></i>&nbsp;<a [href]="header.github">{{header.github}}</a>
+        </div>
+        <div class="social">
+            <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp;<a [href]="header.linkedin">{{header.linkedin}}</a>
+        </div>
+    </section>
+</section>

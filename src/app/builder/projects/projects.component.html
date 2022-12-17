@@ -1,0 +1,30 @@
+<h2>Projects</h2> 
+<section *ngFor="let project of projects">
+    <h3>Project {{project.id}} <button (click)="deleteProject(project.id)">Delete</button></h3>
+    <div>
+        <label>Name</label>
+        <div>
+            <input type="text" value="{{project.name}}" [(ngModel)]="project.name" >
+        </div>
+    </div>
+    <div>
+        <label>Technologies</label>
+        <div>
+            <input type="text" value="{{project.technologies}}" [(ngModel)]="project.technologies">
+        </div>
+    </div>
+    <div>
+        <label>Description</label>
+        <div>
+            <textarea [(ngModel)]="project.description">{{project.description}}</textarea>
+            <!-- <input type="text" value="{{project.description}}" [(ngModel)]="project.description"> -->
+        </div>
+    </div>
+    <div>
+        <label>URL</label>
+        <div>
+            <input type="text" value="{{project.url}}" [(ngModel)]="project.url">
+        </div>
+    </div>
+</section>
+<button (click)="addNewProject()">Add Project</button>

@@ -1,0 +1,23 @@
+<div id="content">
+    <section>
+        <app-header [data]="resume.header" (headerUpdateEvent)="updateHeaderData($event)"></app-header>
+    </section>
+    <section>
+        <app-about-me [aboutme]="resume.aboutme"></app-about-me>
+    </section>
+    <section>
+        <app-skills [skills]="resume.skills"></app-skills>
+    </section>
+    <section>
+        <app-experience [experiences]="resume.experience"></app-experience>
+    </section>
+    <section>
+        <app-projects [projects]="resume.projects"></app-projects>
+    </section>
+    <section>
+        <!-- <app-certifications [certifications]="resume.certificaions"></app-certifications> -->
+    </section>
+    <section>
+        <app-education [educations]="resume.educations"></app-education>
+    </section>
+</div>

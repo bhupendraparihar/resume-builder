@@ -1,0 +1,43 @@
+<h2>Experience</h2> 
+<section>
+    <section *ngFor="let item of experiences">
+        <h3>Experience {{item.id}} <button (click)="deleteExperience(item.id)">Delete</button></h3>
+        <div>
+            <label>Company</label>
+            <div>
+                <input type="text" value="{{item.company}}" [(ngModel)]="item.company">
+            </div>
+        </div>
+        <div>
+            <label>Company Website</label>
+            <div>
+                <input type="text" value="{{item.link}}" [(ngModel)]="item.link">
+            </div>
+        </div>
+        <div>
+            <label>Designation</label>
+            <div>
+                <input type="text" value="{{item.title}}" [(ngModel)]="item.title">
+            </div>
+        </div>
+        <div>
+            <label>Start Date</label>
+            <div>
+                <input type="text" value="{{item.startDate}}" [(ngModel)]="item.startDate">
+            </div>
+        </div>
+        <div>
+            <label>End Date</label>
+            <div>
+                <input type="text" value="{{item.endDate}}" [(ngModel)]="item.endDate">
+            </div>
+        </div>
+        <div>
+            <label>Responsibilities</label>
+            <div>
+                <input type="text" value="{{item.responsibilities}}" [(ngModel)]="item.responsibilities">
+            </div>
+        </div>
+    </section>
+</section>
+<button (click)="addExperienceSection()">Add Experience</button>

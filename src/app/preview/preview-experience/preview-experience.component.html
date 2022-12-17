@@ -1,0 +1,31 @@
+<section *ngIf="experience.length > 0" id="experience">
+    <h1>Experience</h1>
+    <ul data-content="experience">
+        <li *ngFor='let item of experience'>
+            <section>
+                <ul>
+                    <li>
+                        <div class="label">Company:</div>
+                        <div class="content">{{item.company}}</div>
+                    </li>
+                    <li>
+                        <div class="label">Title:</div>
+                        <div class="content">{{item.title}}</div>
+                    </li>
+                    <li>
+                        <div class="label">Tenure:</div>
+                        <div class="content">{{item.startDate}} - {{item.endDate}}</div>
+                    </li>
+                    <li>
+                        <div class="label">Responsibilities:</div>
+                        <div class="content">{{item.responsibilities}}</div>
+                    </li>
+                    <li *ngIf="item.achievements">
+                        <div class="label">Achievements:</div>
+                        <div class="content">{{item.achievements}}</div>
+                    </li>
+                </ul>
+            </section>
+        </li>
+    </ul>
+</section>
