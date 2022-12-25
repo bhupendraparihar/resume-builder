@@ -135,13 +135,18 @@ const resume = {
             "achievements": "82.4%(Percentage)"
         }
     ],
-    "extras": [{
+    "awards": [{
             "title": "Founder and frequent speaker in CDK UI Forum. (eg. Code Quality, JEST, Acceptance Test in CodeCept, Basic JavaScript"
         },
         {
             "title": "ALL ROUNDER certificate from K V NTPC, 2005"
         }
     ],
+    "certificates" : [{
+        "title": "JavaScript Algorithms & Data Structures",
+        "organization":"FreeCodeCamp",
+        "validTill": "2025"
+    }],
     "personalProjects": [{
             "title": "www.jforjs.com",
             "description": "This is my own technical blog, which I am maintaing and updating regularly. Most of the posts are about the day to day things I learn about JavaScript.",

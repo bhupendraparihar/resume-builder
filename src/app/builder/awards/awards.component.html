@@ -1,0 +1,11 @@
+<h2>Awards & Recognitions</h2>
+<section *ngFor="let item of awards">
+    <h3>Award {{item.id}} <button (click)="deleteAward(item.id)">Delete</button></h3>
+    <div>
+        <label>Title</label>
+        <div>
+            <input type="text" value="{{item.title}}" [(ngModel)]="item.title" >
+        </div>
+    </div>
+</section>
+<button (click)="addNewAward()">Add New Award</button>

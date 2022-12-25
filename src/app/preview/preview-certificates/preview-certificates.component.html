@@ -1,0 +1,23 @@
+<section id="certificates" *ngIf="certificates.length">
+    <h1>Certificates</h1>
+    <ul data-content="certificate">
+        <li *ngFor='let item of certificates'>
+            <section>
+                <ul>
+                    <li *ngIf="item.title">
+                        <div class="label">Title:</div>
+                        <div class="content">{{item.title}}</div>
+                    </li>
+                    <li *ngIf="item.organization">
+                        <div class="label">Organization:</div>
+                        <div class="content">{{item.organization}}</div>
+                    </li>
+                    <li *ngIf="item.validTill">
+                        <div class="label">Valid Till:</div>
+                        <div class="content">{{item.validTill}}</div>
+                    </li>
+                </ul>
+            </section>
+        </li>
+    </ul>
+</section>

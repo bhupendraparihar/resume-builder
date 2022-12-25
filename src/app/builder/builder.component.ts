@@ -21,7 +21,9 @@ export class BuilderComponent implements OnInit {
         skills: ["Java", "JavaScript"],
         experience: [],
         projects: [],
-        educations: []
+        educations: [],
+        certificates: [],
+        awards: []
     }
 
     constructor(private saveDataService: SaveDataService) { }

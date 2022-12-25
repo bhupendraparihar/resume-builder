@@ -1,14 +1,14 @@
 <section class="main-container">
   <nav>
+    <span class="font-28">Resume Builder</span>
   <ul>
-    <li><p class="font-28">Resume Builder</p></li>
-    <li><p>by Bhupendra Parihar</p></li>
     <li><a  routerLink="/">Home</a></li>
-    <li><a routerLink="/preview">Preview</a></li>
-    <li><button (click)="save()">Save</button></li>
+    <li><a (click)="save()" routerLink="/preview">Preview</a></li>
+    <li><a (click)="reset()" >Reset</a></li>
   </ul>
 </nav>
-  
-  
   <router-outlet></router-outlet>
+  <footer>
+    &copy; Bhupendra Parihar.
+  </footer>
 </section>

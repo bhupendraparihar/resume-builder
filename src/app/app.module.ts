@@ -11,7 +11,6 @@ import { AboutMeComponent } from './builder/executive-summary/executive-summary.
 import { SkillsComponent } from './builder/skills/skills.component';
 import { ExperienceComponent } from './builder/experience/experience.component';
 import { ProjectsComponent } from './builder/projects/projects.component';
-import { CertificationsComponent } from './builder/certifications/certifications.component';
 import { EducationComponent } from './builder/education/education.component';
 import { PreviewHeaderComponent } from './preview/preview-header/preview-header.component';
 import { PreviewSkillsComponent } from './preview/preview-skills/preview-skills.component';
@@ -24,6 +23,10 @@ import { PreviewObjectiveComponent } from './preview/preview-objective/preview-o
 
 
 import {MatTabsModule} from '@angular/material/tabs';
+import { AwardsComponent } from './builder/awards/awards.component';
+import { CertificatesComponent } from './builder/certificates/certificates.component';
+import { PreviewCertificatesComponent } from './preview/preview-certificates/preview-certificates.component';
+import { PreviewAwardsComponent } from './preview/preview-awards/preview-awards.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,6 @@ import {MatTabsModule} from '@angular/material/tabs';
     SkillsComponent,
     ExperienceComponent,
     ProjectsComponent,
-    CertificationsComponent,
     EducationComponent,
     PreviewHeaderComponent,
     PreviewSkillsComponent,
@@ -44,7 +46,11 @@ import {MatTabsModule} from '@angular/material/tabs';
     PreviewAboutmeComponent,
     PreviewProjectsComponent,
     PreviewPersonalProjectsComponent,
-    PreviewObjectiveComponent
+    PreviewObjectiveComponent,
+    AwardsComponent,
+    CertificatesComponent,
+    PreviewCertificatesComponent,
+    PreviewAwardsComponent
   ],
   imports: [
     BrowserModule,

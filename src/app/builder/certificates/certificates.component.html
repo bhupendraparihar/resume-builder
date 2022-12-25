@@ -1,0 +1,23 @@
+<h2>Certifications</h2>
+<section *ngFor="let certificate of certificates">
+    <h3>Certification {{certificate.id}} <button (click)="deleteCertification(certificate.id)">Delete</button></h3>
+    <div>
+        <label>Title</label>
+        <div>
+            <input type="text" value="{{certificate.title}}" [(ngModel)]="certificate.title" >
+        </div>
+    </div>
+    <div>
+        <label>Organization</label>
+        <div>
+            <input type="text" value="{{certificate.organization}}" [(ngModel)]="certificate.organization">
+        </div>
+    </div>
+    <div>
+        <label>Valid Till</label>
+        <div>
+            <input type="text" value="{{certificate.validTill}}" [(ngModel)]="certificate.validTill">
+        </div>
+    </div>
+</section>
+<button (click)="addNewCertificate()">Add Certificate</button>

@@ -4,7 +4,9 @@ enum SectionType {
     EXPERIENCE = "experience",
     PROJECTS = "projects",
     EDUCATIONS = "educations",
-    ABOUTME = "aboutme"
+    ABOUTME = "aboutme",
+    CERTIFICATES = "certificates",
+    AWARDS = "awards"
 }
 
 export default SectionType;

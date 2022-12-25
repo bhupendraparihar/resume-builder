@@ -1,0 +1,8 @@
+<section id="awards" *ngIf="awards.length">
+    <h1>Awards & Recognitions</h1>
+    <ul data-content="certificate">
+        <li *ngFor='let item of awards'>
+            {{item.title}}
+        </li>
+    </ul>
+</section>
